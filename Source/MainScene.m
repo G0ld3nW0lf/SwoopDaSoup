@@ -14,47 +14,49 @@
     CCNode* _gameContent;
     CCPhysicsNode* _physicsNode;
     CCNode* _levelNode;
-    CCSprite* me;
+    CCSprite* _spoon;
+    NSTimer *_timer;
     int gamecount;
 }
 -(void)onEnter
 {
     [super onEnter];
 
-    me = (CCSprite*)[CCBReader load:@"Me"];
-    me.position = ccp(100,-300);
-    [_physicsNode addChild:me];
+    _spoon = (CCSprite*)[CCBReader load:@"Spoon"];
+    _spoon.position = ccp(100,-300);
+    [_physicsNode addChild:_spoon];
     
 
 
 }
--(void)update:(CCTime)delta
-{
+-(void)update:(CCTime)delta{
     gamecount++;
-
-    
-
-    
     if(/*condition for going down*/gamecount<500)
     {
         if(gamecount%20==19)
         {
-            CCSprite* myobj = (CCSprite*)[CCBReader load:@"Object"];
-            myobj.position = ccp(arc4random()%400,me.position.y-200);
-            [_physicsNode addChild:myobj];
+            CCSprite* ingredient = (CCSprite*)[CCBReader load:@"Object"];
+            ingredient.position = ccp(arc4random()%400,_spoon.position.y-200);
+            [_physicsNode addChild:ingredient];
+            [[ingredient physicsBody] setVelocity:CGPointMake(-100, 0)];
         }
         self.position  = ccp(self.position.x,self.position.y+2.0);
-        me.position = ccp(me.position.x,me.position.y-2.0);
+        _spoon.position = ccp(_spoon.position.x,_spoon.position.y-2.0);
     }
     else
     {
         self.position  = ccp(self.position.x,self.position.y-2.0);
-        me.position = ccp(me.position.x,me.position.y+2.0);
+        _spoon.position = ccp(_spoon.position.x,_spoon.position.y+2.0);
     }
+}
 
-    
-    
+-(void)moveIngredientRight: (CCSprite *) ingredient{
+    [[ingredient physicsBody] setVelocity:CGPointMake(-100, 0)];
+}
 
+-(void)moveIngredientLeft: (CCSprite *) ingredient{
+    
+    [[ingredient physicsBody] setVelocity:CGPointMake(-100, 0)];
 }
 
 @end
