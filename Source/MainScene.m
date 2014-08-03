@@ -41,7 +41,9 @@
         {
             CCSprite* myobj = (CCSprite*)[CCBReader load:@"Object"];
             myobj.position = ccp(arc4random()%400,me.position.y-200);
+            myobj.physicsBody.sensor = YES;
             [_physicsNode addChild:myobj];
+            [self moveLeft:myobj];
         }
         self.position  = ccp(self.position.x,self.position.y+2.0);
         me.position = ccp(me.position.x,me.position.y-2.0);
@@ -56,5 +58,16 @@
     
 
 }
+-(void)moveRight:(CCNode*) mahnig
+{
+    [mahnig.physicsBody setVelocity:ccp(5.0,mahnig.physicsBody.velocity.y)];
+    [self performSelector:@selector(moveLeft) withObject:mahnig afterDelay:5.0];
+}
+-(void)moveLeft:(CCNode*) mahnig
+{
+    [mahnig.physicsBody setVelocity:ccp(-5.0,mahnig.physicsBody.velocity.y)];
+    [self performSelector:@selector(moveRight) withObject:mahnig afterDelay:5.0];
+}
+
 
 @end
