@@ -7,16 +7,13 @@
 //
 
 #import "MainScene.h"
-
+#import "Ingredient.h"
 @implementation MainScene
 {
-    CCNode* _myGameLayer;
-    CCNode* _gameContent;
     CCPhysicsNode* _physicsNode;
-    CCNode* _levelNode;
     CCSprite* _spoon;
     NSTimer *_timer;
-    int gamecount;
+    int _gamecount;
 }
 -(void)onEnter
 {
@@ -30,15 +27,23 @@
 
 }
 -(void)update:(CCTime)delta{
-    gamecount++;
-    if(/*condition for going down*/gamecount<500)
+    _gamecount++;
+    if(/*condition for going down*/_gamecount<500)
     {
-        if(gamecount%20==19)
+        if(_gamecount%20==19)
         {
-            CCSprite* ingredient = (CCSprite*)[CCBReader load:@"Object"];
+            
+            Ingredient* ingredient = (Ingredient*)[CCBReader load:@"Ingredient"];
+            ingredient.physicsBody.sensor = YES;
             ingredient.position = ccp(arc4random()%400,_spoon.position.y-200);
             [_physicsNode addChild:ingredient];
-            [[ingredient physicsBody] setVelocity:CGPointMake(-100, 0)];
+            int rand = arc4random() % 2;
+            if(rand == 0){
+                [self moveIngredientRight:ingredient];
+            }else{
+                [self moveIngredientLeft:ingredient];
+            }
+            
         }
         self.position  = ccp(self.position.x,self.position.y+2.0);
         _spoon.position = ccp(_spoon.position.x,_spoon.position.y-2.0);
@@ -50,13 +55,17 @@
     }
 }
 
--(void)moveIngredientRight: (CCSprite *) ingredient{
-    [[ingredient physicsBody] setVelocity:CGPointMake(-100, 0)];
+-(void)moveIngredientRight: (Ingredient *) ingredient{
+    [[ingredient physicsBody] setVelocity:CGPointMake(100, 0)];
+    [self performSelector:@selector(moveIngredientLeft:) withObject:ingredient afterDelay
+                         :2.0];
 }
 
--(void)moveIngredientLeft: (CCSprite *) ingredient{
+-(void)moveIngredientLeft: (Ingredient *) ingredient{
     
     [[ingredient physicsBody] setVelocity:CGPointMake(-100, 0)];
+    [self performSelector:@selector(moveIngredientRight:) withObject:ingredient afterDelay
+                         :2.0];
 }
 
 @end
