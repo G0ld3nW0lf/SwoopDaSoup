@@ -20,14 +20,16 @@
 	<integer>0</integer>
 	<key>engine</key>
 	<integer>0</integer>
-	<key>excludedFromPackageMigration</key>
-	<integer>0</integer>
 	<key>exporter</key>
 	<string>ccbi</string>
 	<key>fileType</key>
 	<string>CocosBuilderProject</string>
 	<key>fileVersion</key>
 	<integer>1</integer>
+	<key>flattenPaths</key>
+	<false/>
+	<key>needRepublish</key>
+	<true/>
 	<key>onlyPublishCCBs</key>
 	<false/>
 	<key>publishAudioQuality_android</key>
@@ -162,12 +164,17 @@
 			<key>tabletScale</key>
 			<integer>1</integer>
 		</dict>
+		<key>sprites</key>
+		<dict>
+			<key>isDirty</key>
+			<true/>
+			<key>isSmartSpriteSheet</key>
+			<true/>
+		</dict>
 	</dict>
 	<key>versionStr</key>
-	<string>Version: 1.2.0-beta
-Sku: 
-GitHub: 
-8b724d6c13
+	<string>Version: 1.1.0
+GitHub: d058712eaf
 </string>
 </dict>
 </plist>
