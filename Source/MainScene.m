@@ -39,6 +39,7 @@
 -(void)didLoadFromCCB{
     _collectedIngridients = [NSMutableArray array];
     _physicsNode.collisionDelegate = self;
+    
 }
 
 -(void)onEnter
