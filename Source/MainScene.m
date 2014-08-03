@@ -89,7 +89,9 @@
         
     }
     
-    return true;
+    return true;//hi hpyotirhugsfj
+    //thjuruigjiggojhitjuhgyeftdrjnij8ut
+    //hi
 }
 -(void)update:(CCTime)delta{
     if(!_gameEnded)
@@ -109,13 +111,104 @@
                 
                 [self spawnIngridient];
                 
-            }
+            }/*
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+              _eHealth.string = [NSString stringWithFormat:@"Earth: %d", _earth.health];
+              _score.string = [NSString stringWithFormat:@"Points: %d", _points];
+
+              */
             
         }
         [self moveSpoon];
         [self followCamera];
         [self limitMovement];
-    }
+
+    }else
 }
 -(void)processCaughtIngridients
 {

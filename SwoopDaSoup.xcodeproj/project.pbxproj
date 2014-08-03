@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		230E4FB7198E7A3700B9C3CC /* Spoon.m in Sources */ = {isa = PBXBuildFile; fileRef = 230E4FB6198E7A3700B9C3CC /* Spoon.m */; };
 		23A8A398198E65F300E6F6D6 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A8A397198E65F300E6F6D6 /* CoreMotion.framework */; };
 		23F4E5E1198E0D7F000B24EA /* Ingredient.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F4E5E0198E0D7F000B24EA /* Ingredient.m */; };
 		8392007A18EE8E3300B6C429 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8392007918EE8E3300B6C429 /* GLKit.framework */; };
@@ -58,6 +59,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		230E4FB5198E7A3700B9C3CC /* Spoon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Spoon.h; path = Source/Spoon.h; sourceTree = "<group>"; };
+		230E4FB6198E7A3700B9C3CC /* Spoon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Spoon.m; path = Source/Spoon.m; sourceTree = "<group>"; };
 		23A8A397198E65F300E6F6D6 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		23F4E5DF198E0D7F000B24EA /* Ingredient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Ingredient.h; path = Source/Ingredient.h; sourceTree = "<group>"; };
 		23F4E5E0198E0D7F000B24EA /* Ingredient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Ingredient.m; path = Source/Ingredient.m; sourceTree = "<group>"; };
@@ -84,7 +87,7 @@
 		B73789861807631A0076A88C /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = Source/Prefix.pch; sourceTree = SOURCE_ROOT; };
 		B7378992180767190076A88C /* MainScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainScene.h; path = Source/MainScene.h; sourceTree = "<group>"; };
 		B7378993180767190076A88C /* MainScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainScene.m; path = Source/MainScene.m; sourceTree = "<group>"; };
-		B77F1B2E17B978D7009739AE /* SwoopDaSoup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwoopDaSoup.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B77F1B2E17B978D7009739AE /* SwoopDaSoup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = SwoopDaSoup.app; path = "/Users/shashankguduru/Desktop/SwoopDaSoup.spritebuilder/build/Debug-iphoneos/SwoopDaSoup.app"; sourceTree = "<absolute>"; };
 		B77F1B3117B978D7009739AE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B77F1B3317B978D7009739AE /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		B77F1B3517B978D7009739AE /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -135,6 +138,8 @@
 				B737893E1807617C0076A88C /* AppDelegate.m */,
 				B7378992180767190076A88C /* MainScene.h */,
 				B7378993180767190076A88C /* MainScene.m */,
+				230E4FB5198E7A3700B9C3CC /* Spoon.h */,
+				230E4FB6198E7A3700B9C3CC /* Spoon.m */,
 				23F4E5DF198E0D7F000B24EA /* Ingredient.h */,
 				23F4E5E0198E0D7F000B24EA /* Ingredient.m */,
 			);
@@ -178,16 +183,7 @@
 				9222E2B918734FF800A246C7 /* libs */,
 				B77F1CCF17B978D8009739AE /* Supporting Files */,
 				B77F1B3017B978D7009739AE /* Frameworks */,
-				B77F1B2F17B978D7009739AE /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		B77F1B2F17B978D7009739AE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B77F1B2E17B978D7009739AE /* SwoopDaSoup.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		B77F1B3017B978D7009739AE /* Frameworks */ = {
@@ -277,7 +273,7 @@
 				en,
 			);
 			mainGroup = B77F1B2517B978D7009739AE;
-			productRefGroup = B77F1B2F17B978D7009739AE /* Products */;
+			productRefGroup = B77F1B2517B978D7009739AE;
 			projectDirPath = "";
 			projectReferences = (
 				{
@@ -353,6 +349,7 @@
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
 				B7378994180767190076A88C /* MainScene.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
+				230E4FB7198E7A3700B9C3CC /* Spoon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
